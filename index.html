@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIibreria - Proyecto Final Programacion Web II</title>
+    <!-- Enlaces a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a tus propios estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Bienvenidos a la Librería en Línea</h1>
+        <p>Encuentra tus libros favoritos de manera fácil y rápida</p>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Librería Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalogo">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.php">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container mt-4">
+        <section id="catalogo" class="row">
+            <h2 class="text-center mb-4">Catálogo de Novedades</h2>
+            <!-- Aquí agregarás los libros con Bootstrap cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/imagenes/libroA.jpeg" class="card-img-top" alt="Libro 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Título del Libro 1</h5>
+                        <p class="card-text">Descripción corta del libro 1.</p>
+                        <a href="agregar_al_carrito.php" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/imagenes/libroB.jpeg" class="card-img-top" alt="Libro 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Título del Libro 2</h5>
+                        <p class="card-text">Descripción corta del libro 2.</p>
+                        <a href="agregar_al_carrito.php" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Añade más libros según sea necesario -->
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Librería en Línea - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlace a tu archivo JS -->
+    <script src="app.js"></script>
+</body>
+</html>

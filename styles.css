@@ -1,0 +1,16 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
